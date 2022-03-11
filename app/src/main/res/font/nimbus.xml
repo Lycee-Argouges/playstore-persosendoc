@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/nimbus_sans_light_ttf"/>
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="200"
+        android:font="@font/nimbus_sans_ultra_light_ttf"/>
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        android:font="@font/pragmatica_extra_light_ttf"/>
+</font-family>

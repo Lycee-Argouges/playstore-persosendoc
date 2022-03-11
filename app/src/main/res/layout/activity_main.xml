@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.PersoSendoc.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue_spot1"
+            app:popupTheme="@style/Theme.PersoSendoc.PopupOverlay">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_sendoc"/>
+
+            <EditText
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Theme.PersoSendoc.PopupOverlay"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingVertical="15dp"
+        android:id="@+id/editText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_margin="15dp"
+        android:id="@+id/saveButton"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:backgroundTint="@color/blue_200"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load"
+        android:id="@+id/loadButton"
+        android:layout_alignTop="@+id/saveButton"
+        android:layout_toRightOf="@+id/saveButton"
+        android:backgroundTint="@color/blue_200" />
+
+</RelativeLayout>
+
+    <!--style="@style/Theme.PersoSendoc.PopupOverlay"-->
+    <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
